@@ -22,9 +22,9 @@ class CiCdStack(Stack):
             synth=pipelines.ShellStep(
                 "Synth",
                 input=pipelines.CodePipelineSource.connection(
-                    "alexjball/maple-lobbying",
+                    "maple-testimony/lobbying",
                     "main",
-                    connection_arn="arn:aws:codestar-connections:us-east-2:968366361019:connection/6dfb0e73-d88e-4116-b519-2ed28df86f3c",
+                    connection_arn="arn:aws:codestar-connections:us-east-1:968366361019:connection/ba5c5aa4-7567-4051-9c1e-b2d575a1ec74",
                 ),
                 commands=[
                     "pip install poetry",
